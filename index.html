@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Next Phase Network | Your Position Ended. Your Value Did Not.</title>
+  <meta name="description" content="The Next Phase Network helps displaced professionals rediscover the value of their experience, knowledge, and judgment through a Hope Profile." />
+  <style>
+    :root{--bg:#0b0f14;--panel:#111822;--text:#f6f1e8;--muted:#c8c0b2;--gold:#f0c978;--line:rgba(240,201,120,.22);--cream:#fffaf0;--ink:#101319}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 50% 0%,rgba(240,201,120,.20),transparent 38%),linear-gradient(180deg,#081019 0%,#0b0f14 42%,#05070a 100%);color:var(--text)}
+    .wrap{width:min(1080px,calc(100% - 32px));margin:0 auto}.nav{display:flex;justify-content:space-between;gap:12px;padding:22px 0;color:var(--muted);font-size:14px}.brand{letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--text)}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.03)}
+    .hero{padding:56px 0 36px;text-align:center}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:800}h1{font-size:clamp(42px,7vw,88px);line-height:.95;margin:18px auto;max-width:980px;letter-spacing:-.055em}.hero h1 span{display:block;color:var(--gold)}
+    .lead{max-width:760px;margin:0 auto;color:var(--muted);font-size:clamp(18px,2.2vw,24px);line-height:1.55}.cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:30px}.btn{border:0;border-radius:14px;padding:14px 18px;font-weight:800;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}.primary{background:var(--gold);color:var(--ink)}.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+    .sunrise{position:relative;height:170px;overflow:hidden;margin:34px auto 10px;max-width:820px;border-bottom:1px solid rgba(240,201,120,.35)}.sun{width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,#fff3bf 0%,#f0c978 32%,rgba(240,201,120,.30) 58%,transparent 70%);position:absolute;left:50%;bottom:-178px;transform:translateX(-50%);box-shadow:0 0 120px rgba(240,201,120,.38)}
+    section{padding:44px 0}.panel{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:26px;padding:clamp(22px,4vw,42px);box-shadow:0 20px 80px rgba(0,0,0,.25)}.section-title{font-size:clamp(30px,4.5vw,52px);line-height:1.05;margin:0 0 16px;letter-spacing:-.035em}.copy,.dayafter p{color:var(--muted);font-size:18px;line-height:1.75}.dayafter p{font-size:clamp(19px,2.3vw,25px)}.dayafter b{color:var(--gold)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.card{border:1px solid var(--line);background:rgba(0,0,0,.15);border-radius:20px;padding:22px}.card p{color:var(--muted);line-height:1.6}.declaration{display:grid;gap:10px;margin-top:20px}.declare-line{padding:13px 15px;border-radius:14px;background:rgba(240,201,120,.07);border:1px solid rgba(240,201,120,.16);color:#e8d9bd;font-weight:650}
+    .progress{height:10px;background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:999px;overflow:hidden;margin:0 0 22px}.bar{height:100%;width:25%;background:var(--gold);transition:.25s ease}.step{display:none}.step.active{display:block}label{display:block;color:#e8d9bd;font-weight:750;margin:18px 0 8px}input,textarea,select{width:100%;background:var(--cream);color:var(--ink);border:0;border-radius:14px;padding:14px;font-size:16px}textarea{min-height:118px;resize:vertical;line-height:1.55}.checkgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px}.check{display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.04);color:var(--muted);font-weight:650}.check input{width:auto;margin-top:2px}.form-actions{display:flex;justify-content:space-between;gap:12px;margin-top:24px;flex-wrap:wrap}.note{font-size:14px;color:var(--muted);line-height:1.6;margin-top:12px}.success{display:none}.success.active{display:block}.report{white-space:pre-wrap;background:var(--cream);color:var(--ink);border-radius:18px;padding:20px;line-height:1.55;margin-top:16px;max-height:420px;overflow:auto}footer{padding:54px 0 60px;color:var(--muted);text-align:center;font-size:14px;border-top:1px solid var(--line);margin-top:44px}
+    .footer-tagline{font-size:18px;color:var(--gold);margin:0 0 10px}
+    .footer-thanks{font-style:italic;margin:0 0 18px}
+    .footer-copy{font-size:13px;margin:0 0 10px;color:#d4c9b6}
+    .footer-contact{font-size:14px;margin:0 0 18px;color:#d4c9b6;line-height:1.55}
+    .footer-disclaimer{max-width:760px;margin:0 auto;color:#a9a091;font-size:12px;line-height:1.65}
+    @media(max-width:760px){.grid,.checkgrid{grid-template-columns:1fr}.nav{flex-direction:column}.hero{padding-top:30px}.sunrise{height:125px}.sun{width:210px;height:210px;bottom:-145px}.btn{width:100%}}
+  </style>
+</head>
+<body>
+  <!--
+
+  The Next Phase Network
+
+  We measure our success by one question:
+
+  Did this person leave with more hope than when they arrived?
+
+  If not, keep building.
+
+  -->
+  <div class="wrap">
+    <nav class="nav"><div class="brand">The Next Phase Network</div><div class="pill">Hope Profile™ Beta</div></nav>
+    <header class="hero">
+      <div class="eyebrow">For the day after</div>
+      <h1>Your position ended.<span>Your value did not.</span></h1>
+      <p class="lead">Knowledge deserves another chance to make a difference.</p>
+      <div class="sunrise"><div class="sun"></div></div>
+      <p class="lead">If you were dismissed, displaced, downsized, rightsized, or quietly pushed into an ending you did not choose, take a breath. You are not finished.</p>
+      <p class="lead" style="margin-top:18px;"><strong>You don't have to carry this alone anymore.</strong></p>
+      <div class="cta-row"><a class="btn primary" href="#hope-profile">Begin My Hope Profile</a><a class="btn secondary" href="#day-after">Read this first</a></div>
+    </header>
+    <section id="day-after"><div class="panel dayafter"><h2 class="section-title">The day after</h2>
+      <p>The day after your company dismissed you... <b>the sun still rises.</b></p>
+      <p>The day after decades of faithful service were reduced to a meeting and a handshake... <b>the sun still rises.</b></p>
+      <p>The day after your laptop was returned, your access was revoked, your projects reassigned, and your calendar disappeared... <b>the sun still rises.</b></p>
+      <p>The day after you wondered if anyone would ever need what you know again... <b>the sun still rises.</b></p>
+      <p>Not because yesterday did not matter. Not because what happened did not hurt. Not because you are expected to simply move on.</p>
+      <p>The sun rises because <strong>your story did not end yesterday.</strong></p>
+      <p>There is still knowledge within you. There is still wisdom earned over years. There are still problems only your experience can solve.</p>
+      <p>Today, you may not believe that yet. That is okay. Until you do, <strong>we will believe it with you.</strong></p></div></section>
+    <section><div class="grid"><div class="card"><h3>Restore confidence</h3><p>We meet professionals in transition with dignity first, strategy second.</p></div><div class="card"><h3>Reveal expertise</h3><p>We help translate years of work into clear knowledge, strengths, and professional value.</p></div><div class="card"><h3>Reconnect opportunity</h3><p>We help people see where their experience may belong next.</p></div></div></section>
+    <section><div class="panel"><h2 class="section-title">The Next Phase Declaration</h2><p class="copy">Before a résumé. Before an application. Before the next interview. Let this be true.</p><div class="declaration">
+      <div class="declare-line">My position is not my identity.</div><div class="declare-line">My title is not my worth.</div><div class="declare-line">My experience still matters.</div><div class="declare-line">My knowledge still has value.</div><div class="declare-line">My contribution did not end because my employment did.</div><div class="declare-line">I am not starting over. I am carrying forward everything I have learned.</div><div class="declare-line">My next phase begins today.</div></div></div></section>
+    <section id="hope-profile"><div class="panel"><h2 class="section-title">Begin your Hope Profile™</h2><p class="copy">This first version helps you begin naming what the market may have failed to see: the knowledge, judgment, and experience you still carry.</p><p class="note"><strong>Privacy note:</strong> This beta form does not upload your résumé yet. It creates a private starter Hope Profile on your screen that you can save.</p>
+      <div id="formWrap"><div class="progress"><div class="bar" id="bar"></div></div><form id="hopeForm">
+        <div class="step active"><h3>First, tell us what happened.</h3><label for="name">First name</label><input id="name" required placeholder="Your first name"><label for="situation">What brought you here?</label><select id="situation" required><option value="">Choose one</option><option>My position was eliminated</option><option>My company merged or restructured</option><option>I have an exit date</option><option>I was laid off unexpectedly</option><option>I am preparing for a transition</option><option>I am exploring what comes next</option></select><label for="feel">How are you holding up today?</label><textarea id="feel" placeholder="One honest sentence is enough."></textarea></div>
+        <div class="step"><h3>Now, remember what you built.</h3><label for="proud">What work are you most proud of?</label><textarea id="proud"></textarea><label for="thanks">What do people thank you for?</label><textarea id="thanks"></textarea><label for="solved">What problems did people consistently bring to you?</label><textarea id="solved"></textarea></div>
+        <div class="step"><h3>What knowledge do you carry?</h3><div class="checkgrid"><label class="check"><input type="checkbox" name="skills" value="Project Management"> Project Management</label><label class="check"><input type="checkbox" name="skills" value="Process Improvement"> Process Improvement</label><label class="check"><input type="checkbox" name="skills" value="SharePoint / Microsoft 365"> SharePoint / Microsoft 365</label><label class="check"><input type="checkbox" name="skills" value="Information Governance"> Information Governance</label><label class="check"><input type="checkbox" name="skills" value="Records Management"> Records Management</label><label class="check"><input type="checkbox" name="skills" value="Knowledge Management"> Knowledge Management</label><label class="check"><input type="checkbox" name="skills" value="Document Control"> Document Control</label><label class="check"><input type="checkbox" name="skills" value="SOPs / Procedures"> SOPs / Procedures</label><label class="check"><input type="checkbox" name="skills" value="Change Management"> Change Management</label><label class="check"><input type="checkbox" name="skills" value="GenAI / AI Readiness"> GenAI / AI Readiness</label><label class="check"><input type="checkbox" name="skills" value="Compliance"> Compliance</label><label class="check"><input type="checkbox" name="skills" value="Training / Mentoring"> Training / Mentoring</label></div><label for="otherSkills">Other knowledge areas</label><textarea id="otherSkills"></textarea></div>
+        <div class="step"><h3>Where might your value land next?</h3><label for="next">What do you hope your next opportunity allows you to do?</label><textarea id="next"></textarea><label>What kinds of opportunities are you open to?</label><div class="checkgrid"><label class="check"><input type="checkbox" name="workType" value="Full-time"> Full-time</label><label class="check"><input type="checkbox" name="workType" value="Contract"> Contract</label><label class="check"><input type="checkbox" name="workType" value="Consulting"> Consulting</label><label class="check"><input type="checkbox" name="workType" value="Fractional"> Fractional</label><label class="check"><input type="checkbox" name="workType" value="Remote"> Remote</label><label class="check"><input type="checkbox" name="workType" value="Hybrid"> Hybrid</label></div><label for="email">Email address (optional for beta follow-up)</label><input id="email" type="email" placeholder="you@example.com"></div>
+        <div class="form-actions"><button class="btn secondary" type="button" id="prevBtn">Back</button><button class="btn primary" type="button" id="nextBtn">Next</button><button class="btn primary" type="submit" id="submitBtn" style="display:none">Create My Starter Hope Profile</button></div>
+      </form></div>
+      <div class="success" id="success"><h2 class="section-title">Welcome back.</h2><p class="copy">Not to The Next Phase Network. Back to the professional you have always been.</p><div class="report" id="report"></div><div class="cta-row"><button class="btn primary" type="button" id="copyBtn">Copy My Starter Profile</button><button class="btn secondary" type="button" id="downloadBtn">Download as Text</button><button class="btn secondary" type="button" id="restartBtn">Start Over</button></div><p class="note">Next version: secure résumé upload, AI-generated Hope Report, and email delivery.</p></div>
+    </div></section>
+    <section><div class="panel"><h2 class="section-title">Our promise</h2><p class="copy">We will never define your worth by a job title. We will never reduce decades of experience to a list of keywords. We will help you remember what the market cannot measure: the knowledge, judgment, care, and experience that still have the power to make a difference.</p></div></section>
+    <footer>
+      <p class="footer-tagline"><strong>Knowledge deserves another chance to make a difference.</strong></p>
+      <p class="footer-thanks">Thank you for allowing us to be part of your next chapter.</p>
+      <p class="footer-contact">Questions? We'd love to hear from you.<br>contact@thenextphasenetwork.com</p>
+      <p class="footer-copy">&copy; 2026 The Next Phase Network. All rights reserved.</p>
+      <p class="footer-disclaimer">The Next Phase Network provides career guidance, professional profile development, and educational resources. We do not guarantee employment, interviews, job placement, or career outcomes.</p>
+    </footer>
+  </div>
+  <script>
+    const steps=[...document.querySelectorAll('.step')],bar=document.getElementById('bar'),prevBtn=document.getElementById('prevBtn'),nextBtn=document.getElementById('nextBtn'),submitBtn=document.getElementById('submitBtn'),form=document.getElementById('hopeForm'),formWrap=document.getElementById('formWrap'),success=document.getElementById('success'),reportEl=document.getElementById('report');let currentStep=0;
+    function showStep(i){steps.forEach((s,n)=>s.classList.toggle('active',n===i));bar.style.width=((i+1)/steps.length*100)+'%';prevBtn.style.visibility=i===0?'hidden':'visible';nextBtn.style.display=i===steps.length-1?'none':'inline-flex';submitBtn.style.display=i===steps.length-1?'inline-flex':'none'}
+    function checked(name){return [...document.querySelectorAll(`input[name="${name}"]:checked`)].map(x=>x.value)} function val(id){return (document.getElementById(id)?.value||'').trim()}
+    function buildReport(){const name=val('name')||'Friend', skills=[...checked('skills'),val('otherSkills')].filter(Boolean).join(', ')||'the experience you have earned over time', work=checked('workType').join(', ')||'the next right opportunity';return `Starter Hope Profile for ${name}
+
+Your position may have changed.
+Your value did not.
+
+What brought you here:
+${val('situation')||'A professional transition'}
+
+How you are holding up:
+${val('feel')||'You are still processing what happened — and that is understandable.'}
+
+What you are proud of:
+${val('proud')||'There is work in your story worth naming. Return to this question when you are ready.'}
+
+What people thank you for:
+${val('thanks')||'The way you contributed may be clearer to others than it feels to you right now.'}
+
+Problems you are trusted to solve:
+${val('solved')||'Your experience contains patterns of trust, problem-solving, and judgment.'}
+
+Knowledge you carry:
+${skills}
+
+Opportunities you may be open to:
+${work}
+
+What you hope your next opportunity allows:
+${val('next')||'To bring your knowledge somewhere it can still make a difference.'}
+
+What we see:
+You are not starting over. You are carrying forward everything you have learned. The projects, problems, people, systems, lessons, and judgment you earned did not disappear because one organization made a decision.
+
+Your next phase is not a denial of what happened.
+It is evidence that your story still has somewhere to go.
+
+The sun still rises.
+And so will you.`}
+    nextBtn.onclick=()=>{if(currentStep<steps.length-1){currentStep++;showStep(currentStep)}};prevBtn.onclick=()=>{if(currentStep>0){currentStep--;showStep(currentStep)}};
+    form.onsubmit=e=>{e.preventDefault();reportEl.textContent=buildReport();formWrap.style.display='none';success.classList.add('active');success.scrollIntoView({behavior:'smooth'})};
+    document.getElementById('copyBtn').onclick=async()=>{await navigator.clipboard.writeText(reportEl.textContent);document.getElementById('copyBtn').textContent='Copied';setTimeout(()=>document.getElementById('copyBtn').textContent='Copy My Starter Profile',1500)};
+    document.getElementById('downloadBtn').onclick=()=>{const blob=new Blob([reportEl.textContent],{type:'text/plain'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='starter-hope-profile.txt';a.click();URL.revokeObjectURL(url)};
+    document.getElementById('restartBtn').onclick=()=>{form.reset();currentStep=0;showStep(0);formWrap.style.display='block';success.classList.remove('active');document.getElementById('hope-profile').scrollIntoView({behavior:'smooth'})};
+    showStep(0);
+  </script>
+</body>
+</html>
